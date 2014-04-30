@@ -23,12 +23,12 @@ First, install Jekyll, as per the Jekyll docs, then go into the project folder a
 ```shell
 gem install jekyll
 cd writeit.poplus.org
-jekyll serve --baseurl ''
+jekyll serve --watch --baseurl ''
 ```
 
 The `--baseurl` option is part of [an elegant hack](http://jekyllrb.com/docs/github-pages/#project_page_url_structure) to replicate the Github Pages hosting structure locally.
 
-As long as the server is running, your site will be available at http://0.0.0.0:4000.
+As long as the server is running, your site will be available at http://0.0.0.0:4000. Local changes will be reflected automatically, thanks to the `--watch` flag.
 
 Remember, when you’re editing links or paths in the HTML, to use the `{{ site.baseurl }}` template tag for internal links. Take a look in `_includes/html-head.html` for an example.
 
