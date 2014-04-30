@@ -14,6 +14,24 @@ Compile the Sass files using [(docs)](http://sass-lang.com/documentation/file.SA
 sass --watch assets/sass:css
 ```
 
+## Running a local web server
+
+You can preview your changes without pushing to Github by running a local Jekyll web server.
+
+First, install Jekyll, as per the Jekyll docs, then go into the project folder and start a local server:
+
+```shell
+gem install jekyll
+cd writeit.poplus.org
+jekyll serve --baseurl ''
+```
+
+The `--baseurl` option is part of [an elegant hack](http://jekyllrb.com/docs/github-pages/#project_page_url_structure) to replicate the Github Pages hosting structure locally.
+
+As long as the server is running, your site will be available at http://0.0.0.0:4000.
+
+Remember, when you’re editing links or paths in the HTML, to use the `{{ site.baseurl }}` template tag for internal links. Take a look in `_includes/html-head.html` for an example.
+
 ## Deploying changes
 
 The site is hosted via Github Pages. To ‘deploy’ your changes from the `master` branch, merge them into the `gh-pages` branch:
