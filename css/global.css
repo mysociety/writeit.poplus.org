@@ -820,7 +820,7 @@ textarea,
   color: #596779; }
 
 .page-credits a {
-  color: #708095; }
+  color: inherit; }
 
 .page-credits a:hover,
 .page-credits a:focus {
