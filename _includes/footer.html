@@ -19,5 +19,8 @@
                 <a href="http://mysociety.org/" class="mysociety-founder-logo">mySociety</a>
             </div>
         </div>
+        {% if page.credits %}
+          <p class="page-credits">{{ page.credits }}</p>
+        {% endif %}
     </div>
 </div>

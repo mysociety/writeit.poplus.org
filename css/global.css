@@ -783,7 +783,8 @@ textarea,
   margin-right: 1em; }
 
 @media (min-width: 50em) {
-  .poplus-founders {
+  .poplus-founders,
+  .page-credits {
     text-align: right;
     float: left;
     width: 40%;
@@ -814,6 +815,16 @@ textarea,
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
     .mysociety-founder-logo {
       background-image: url("../assets/img/mysociety-logo@2.png"); } }
+
+.page-credits {
+  color: #596779; }
+
+.page-credits a {
+  color: #708095; }
+
+.page-credits a:hover,
+.page-credits a:focus {
+  color: #8d9aab; }
 
 /* The shared parts of all homepages here */
 .hero {
