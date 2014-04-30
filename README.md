@@ -25,3 +25,9 @@ git push origin gh-pages
 ```
 
 Your changes will then be visible at http://mysociety.github.io/writeit.poplus.org and, once we’ve sorted out DNS, http://writeit.poplus.org too.
+
+Remember to switch back into the `master` branch (or a feature branch) when continuing to make changes after deployment!
+
+```shell
+git checkout master
+```
