@@ -1,4 +1,4 @@
 name: writeit.poplus.org
-baseurl: /writeit.poplus.org
+baseurl:
 markdown: redcarpet
 pygments: true
